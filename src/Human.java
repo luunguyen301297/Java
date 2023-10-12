@@ -11,6 +11,9 @@ public class Human {
   String tell;
   double weight;
 
+  public Human(String trump) {
+  }
+
   public String getName() {
     return name;
   }
@@ -19,7 +22,52 @@ public class Human {
     this.name = name;
   }
 
+  public int getAge() {
+    return age;
+  }
+
+  public void setAge(int age) {
+    this.age = age;
+  }
+
+  public String getAddress() {
+    return address;
+  }
+
+  public void setAddress(String address) {
+    this.address = address;
+  }
+
+  public String getEmail() {
+    return email;
+  }
+
+  public void setEmail(String email) {
+    this.email = email;
+  }
+
+  public String getTell() {
+    return tell;
+  }
+
+  public void setTell(String tell) {
+    this.tell = tell;
+  }
+
+  public double getWeight() {
+    return weight;
+  }
+
+  public void setWeight(double weight) {
+    this.weight = weight;
+  }
+
   public Human() {
+  }
+
+  public Human(String name, int age) {
+    this.name = name;
+    this.age = age;
   }
 
   public Human(String name, int age, String address, String email, String tell, double weight) {
@@ -48,5 +96,15 @@ public class Human {
       checkAge = "Kid";
     }
     return checkAge;
+  }
+
+  public Students grow() {
+    Students s = null;
+    if (this.age >= 3){
+      s = new Students();
+      s.setName(this.name);
+      s.setAge(this.age);
+    }
+    return s;
   }
 }
