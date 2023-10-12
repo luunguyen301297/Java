@@ -7,7 +7,7 @@ import java.util.Scanner;
  * @mailto : luunguyen301297@gmail.com
  * @created : 10/7/2023, Saturday
  **/
-public class Tower {
+public class HanoiTower {
   static void tower(int N, int a, int b, int c)
   {
     if(N == 1)
