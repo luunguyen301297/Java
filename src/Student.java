@@ -25,13 +25,13 @@ public class Student {
     return studentId;
   }
 
-  public boolean setStudentId(long studentId) {
+  public boolean setStudentId(long studentId) { //fixme : return
     try {
       this.studentId = studentId;
       return true;
     } catch (Exception e) {
       System.err.println("ID includes only digits !");
-      System.out.println("Re-enter :");
+      System.out.println("Try again :");
       return false;
     }
   }
@@ -41,12 +41,12 @@ public class Student {
   }
 
   public boolean setFullName(String fullName) {
-    if (((fullName != null) && (fullName.matches("^[a-zA-Z]*$")))) {
+    if (fullName != null && fullName.matches("^[a-zA-Z]*$")) {
       this.fullName = fullName;
       return true;
     } else {
       System.err.println("Incorrect name format");
-      System.out.println("Re-enter :");
+      System.out.println("Try again :");
       return false;
     }
   }
@@ -55,8 +55,15 @@ public class Student {
     return address;
   }
 
-  public void setAddress(String address) {
-    this.address = address;
+  public boolean setAddress(String address) {
+    if (address != null) {
+      this.address = address;
+      return true;
+    } else {
+      System.err.println("Incorrect address format");
+      System.out.println("Try again :");
+      return false;
+    }
   }
 
   public String getPhoneNumber() {
@@ -69,7 +76,7 @@ public class Student {
       return true;
     } else {
       System.err.println("The phone number must have 7 digits !");
-      System.out.println("Re-enter :");
+      System.out.println("Try again :");
       return false;
     }
   }
@@ -79,25 +86,25 @@ public class Student {
 
     System.out.println("Enter student Id : ");
     while (true) {
-      boolean check = setStudentId(Long.parseLong(scanner.nextLine()));
-      if (check)
+      if (setStudentId(Long.parseLong(scanner.nextLine())))
         break;
     }
 
     System.out.println("Enter full name : ");
     while (true) {
-      boolean check = setFullName(scanner.nextLine());
-      if (check)
+      if (setFullName(scanner.nextLine()))
         break;
     }
 
-    System.out.println("Enter address : ");
-    address = scanner.nextLine();
+    System.out.println("Enter address : "); //fixme : return
+    while (true) {
+      if (setAddress(scanner.nextLine()))
+        break;
+    }
 
     System.out.println("Enter phone number : ");
     while (true) {
-      boolean check = setPhoneNumber(scanner.nextLine());
-      if (check)
+      if (setPhoneNumber(scanner.nextLine()))
         break;
     }
   }

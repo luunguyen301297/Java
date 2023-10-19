@@ -24,32 +24,58 @@ public class Main {
     do {
       showMenu();
       System.out.println("Please choose the action : ");
-      choose = Integer.parseInt(scanner.nextLine());
+      while (true) {
+        try {
+          choose = Integer.parseInt(scanner.nextLine());
+          break;
+        } catch (NumberFormatException e) {
+          System.err.println(e.getMessage() + " / selection includes only digits !");
+          System.out.println("Try again :");
+        }
+      }
 
       switch (choose) {
-        case 1:
-          int n;
+        case 1: //todo: add students
+          int n = 0;
           System.out.println("Enter the number of students you need to add :");
-          n = Integer.parseInt(scanner.nextLine());
+
+          while (true) {
+            try {
+              n = Integer.parseInt(scanner.nextLine());
+              break;
+            } catch (NumberFormatException e) {
+              System.err.println(e.getMessage() + " / The number of students must be a number !");
+              System.out.println("Try again :");
+            }
+          }
+
+          int count = 1;
+
           for (int i = 0; i < n; i++) {
             Student student = new Student();
+            System.err.println("Enter student " + count + " information >>>");
             student.inputInfo();
             studentList.add(student);
+
+            //todo: check student ID trong lần nhập tiếp theo không được trùng với các ID đã có
+
+            count++;
           }
           break;
 
-        case 2:
+        case 2: //todo: show students
           if (studentList.isEmpty()) {
             System.err.println("There are no students on the list !");
           } else {
+            System.out.println("List students :");
             for (int i = 0; i < studentList.size(); i++) {
               studentList.get(i).showInfo();
             }
             break;
           }
 
-        case 3:
-          System.out.println("Sort by...?");
+        case 3: //todo: sort list
+          System.out.println("Sort student list by...?");
           System.out.println("1. ID");
           System.out.println("2. Name");
           if (studentList.isEmpty()) {
@@ -57,23 +83,24 @@ public class Main {
           } else {
             switch (Integer.parseInt(scanner.nextLine())) {
               case 1:
-                studentList.sort(Comparator.comparing(Student::getStudentId));
+                studentList.sort(Comparator.comparing(Student::getStudentId));  //Java 8 sort with Comparator
                 break;
               case 2:
                 studentList.sort(Comparator.comparing(Student::getFullName));
                 break;
             }
 
+            System.out.println("List of students after being sorted :");
             for (int i = 0; i < studentList.size(); i++) {
               studentList.get(i).showInfo();
             }
             break;
           }
 
-        case 4:
+        case 4: //todo: delete students
           System.out.println("Enter the student ID to delete :");
           long searchById = Long.parseLong(scanner.nextLine());
-          int count = 0;
+          count = 0;
 
           for (int i = 0; i < studentList.size(); i++) {
             if (studentList.get(i).getStudentId() == searchById) {
@@ -88,7 +115,7 @@ public class Main {
           }
           break;
 
-        case 5:
+        case 5: //todo: edit information
           System.out.println("Enter the student ID that needs to edit information : ");
           searchById = Long.parseLong(scanner.nextLine());
           count = 0;
