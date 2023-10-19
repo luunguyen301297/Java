@@ -56,9 +56,6 @@ public class Main {
             System.err.println("Enter student " + count + " information >>>");
             student.inputInfo();
             studentList.add(student);
-
-            //todo: check student ID trong lần nhập tiếp theo không được trùng với các ID đã có
-
             count++;
           }
           break;

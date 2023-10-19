@@ -1,3 +1,6 @@
+import ultils.DateTimeUtils;
+
+import java.util.Date;
 import java.util.Scanner;
 
 /**
@@ -10,30 +13,29 @@ public class Student {
   private String fullName;
   private String address;
   private String phoneNumber;
+  private Date dateOfBirth;
+  private Date enterDate;
+  private Integer age;
+  private Integer level;
 
   public Student() {
   }
 
-  public Student(long studentId, String fullName, String address, String phoneNumber) {
+  public Student(long studentId, String fullName, String address, String phoneNumber, Date dateOfBirth, Date enterDate) {
     this.studentId = studentId;
     this.fullName = fullName;
     this.address = address;
     this.phoneNumber = phoneNumber;
+    this.dateOfBirth = dateOfBirth;
+    this.enterDate = enterDate;
   }
 
   public long getStudentId() {
     return studentId;
   }
 
-  public boolean setStudentId(long studentId) { //fixme : return
-    try {
-      this.studentId = studentId;
-      return true;
-    } catch (Exception e) {
-      System.err.println("ID includes only digits !");
-      System.out.println("Try again :");
-      return false;
-    }
+  public void setStudentId(long studentId) { //fixme : return
+    this.studentId = studentId;
   }
 
   public String getFullName() {
@@ -81,13 +83,34 @@ public class Student {
     }
   }
 
+  public Integer getAge() {
+    if (this.dateOfBirth != null) {
+      int age = DateTimeUtils.getAge(this.dateOfBirth);
+      return age < 0 ? null : age;
+    }
+    return null;
+  }
+
+  public Integer getLevel() {
+    if (this.enterDate != null) {
+      int age = DateTimeUtils.getAge(this.dateOfBirth);
+      return age < 0 ? null : age;
+    }
+    return null;
+  }
+
   public void inputInfo() {
     Scanner scanner = new Scanner(System.in);
 
     System.out.println("Enter student Id : ");
     while (true) {
-      if (setStudentId(Long.parseLong(scanner.nextLine())))
+      try {
+        studentId = Long.parseLong(scanner.nextLine());
         break;
+      } catch (Exception e) {
+        System.err.println("ID includes only digits !");
+        System.out.println("Try again :");
+      }
     }
 
     System.out.println("Enter full name : ");
