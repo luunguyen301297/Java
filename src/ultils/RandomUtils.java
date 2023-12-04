@@ -15,7 +15,7 @@ public class RandomUtils {
   public static final String digits = "0123456789";
 
   private static Random random = new Random();
-  public static String randomAlphaNumberic(int numberChar) {
+  public static String randomAlphaNummeric(int numberChar) {
     StringBuilder stringBuilder = new StringBuilder();
 
     for (int i = 0; i < numberChar; i++) {

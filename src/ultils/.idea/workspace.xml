@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="67e4afc7-5df5-4d08-ac8d-47e9aa641b7b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../java1/Lab8/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OOP/src/qlsv/QLSV.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../OOP/src/qlsv/QLSV.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OOP/src/qlsv/Students.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../OOP/src/qlsv/Students.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OOP/src/testEnum/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../OOP/src/testEnum/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DateTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java1/dateTimeEnCode/DateTime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java1/ArrayLab.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java1/ArrayQuestion.java" beforeDir="false" afterPath="$PROJECT_DIR$/../algorithms/ArrayQuestion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java1/Array_ex.java" beforeDir="false" afterPath="$PROJECT_DIR$/../algorithms/Array_ex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java1/CheckPassword.java" beforeDir="false" afterPath="$PROJECT_DIR$/../algorithms/CheckPassword.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java1/ConvertString.java" beforeDir="false" afterPath="$PROJECT_DIR$/../algorithms/ConvertString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java1/Decimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/../algorithms/Decimal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java1/Ex.java" beforeDir="false" afterPath="$PROJECT_DIR$/../algorithms/Ex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java1/HanoiTower.java" beforeDir="false" afterPath="$PROJECT_DIR$/../algorithms/HanoiTower.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java1/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java1/OptimalString.java" beforeDir="false" afterPath="$PROJECT_DIR$/../algorithms/OptimalString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java1/Panlyndrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/../algorithms/Panlyndrome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java1/PrimeNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/../algorithms/PrimeNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java1/ReadFromTxt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java1/Recursion.java" beforeDir="false" afterPath="$PROJECT_DIR$/../algorithms/Recursion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java1/SearchString.java" beforeDir="false" afterPath="$PROJECT_DIR$/../algorithms/SearchString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java1/SeparateNumberAndCharFromStr.java" beforeDir="false" afterPath="$PROJECT_DIR$/../algorithms/SeparateNumberAndCharFromStr.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java1/String_Ex.java" beforeDir="false" afterPath="$PROJECT_DIR$/../algorithms/String_Ex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java1/SumOfNumInString.java" beforeDir="false" afterPath="$PROJECT_DIR$/../algorithms/SumOfNumInString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java1/UCLN.java" beforeDir="false" afterPath="$PROJECT_DIR$/../algorithms/UCLN.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java2/Exception_Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java1/exceptionEx/Exception_Calculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java2/Exception_DevideByZero.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java1/exceptionEx/Exception_DevideByZero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java2/Exception_ex.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java1/exceptionEx/Exception_ex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java1/exceptionEx/TestMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java2/collections.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss5/Human.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss5/Students.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6/Animal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6/BabyCat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6/Cat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss7/BankAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java1/bank/BankAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss7/JCBBankAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java1/bank/JCBBankAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss7/NotEnoughMoneyExeption.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java1/bank/NotEnoughMoneyExeption.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss7/VisaAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java1/bank/VisaAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DateTimeUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/DateTimeUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RandomUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/RandomUtils.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 6
+}]]></component>
+  <component name="ProjectId" id="2XWnqFDuRN2xQW2h95w5dhFt5bt" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/ad/IdeaProjects/Demo_Java/src/ultils"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="67e4afc7-5df5-4d08-ac8d-47e9aa641b7b" name="Changes" comment="" />
+      <created>1698753892030</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1698753892030</updated>
+    </task>
+    <servers />
+  </component>
+</project>

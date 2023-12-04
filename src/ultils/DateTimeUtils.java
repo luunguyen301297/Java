@@ -1,7 +1,7 @@
 package ultils;
 
-import java.util.Calendar;
-import java.util.Date;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 /**
  * @author : ad
@@ -9,15 +9,26 @@ import java.util.Date;
  * @created : 10/19/2023, Thursday
  **/
 public class DateTimeUtils {
-  public static int getAge(Date date) {
-    Calendar calendar1 = Calendar.getInstance();
-    calendar1.setTime(date);
-    Calendar calendar2 = Calendar.getInstance();
-    calendar1.setTime(new Date());
-    if (date.after(new Date())) {
-      return -1;
+  public static Integer getAge(LocalDate date) {
+    int age = 0;
+    LocalDate dayNow = LocalDate.now();
+    if (dayNow.getMonthValue() > date.getMonthValue()) {
+      age = dayNow.getYear() - date.getYear();
+    } else if (dayNow.getMonthValue() < date.getMonthValue()) {
+      age = dayNow.getYear() - date.getYear() - 1;
     } else {
-      return calendar2.get(Calendar.YEAR) - calendar1.get(Calendar.YEAR) + 1;
+      if (dayNow.getDayOfMonth() >= date.getDayOfMonth()) {
+        age = dayNow.getYear() - date.getYear();
+      } else {
+        age = dayNow.getYear() - date.getYear() - 1;
+      }
     }
+    return age;
+  }
+
+  public static String convertDateToString(LocalDate date) {
+    LocalDate localDate = LocalDate.now();
+    DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+    return localDate.format(formatter);
   }
 }
